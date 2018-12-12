@@ -1,0 +1,10 @@
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\Model.dll.config
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\Model.dll
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\Model.pdb
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\EntityFramework.dll
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\EntityFramework.xml
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\obj\Debug\Model.dll
+D:\UDEMY\ASP.NET MVC 5\ThucHanh\Ajax\Model\obj\Debug\Model.pdb

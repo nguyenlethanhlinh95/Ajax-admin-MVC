@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div class="container">
+    <br />
+    <div class="row">
+        <div class="col-md-10">
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="txtNameS" placeholder="Name Search" />
+            </div>
+            <div class="col-md-4">
+                <label>
+                    <select class="form-control" id="ddlStatus">
+                        <option value="">All</option>
+                        <option value="true">Active</option>
+                        <option value="false">Locked</option>
+                    </select>
+                </label>
+            </div>   
+            <div class="col-md-4">
+                <button class="btn btn-primary" id="btnSearch">Search</button>
+                <button class="btn btn-delete" id="btnReset">Reset</button>
+            </div>                  
+        </div>
+        <div class="col-md-2">
+            <button id="btnAddNew" class="btn btn-success pull-right">Add New Employee</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Name</td>
+                        <td>Salary</td>
+                        <td>Status</td>
+                        <td>#</td>
+                    </tr>
+                </thead>
+                <tbody id="tblData"></tbody>
+            </table>
+            <div id="pagination" class="pagination-sm">
+
+            </div>
+        </div>
+
+        
+        @RenderPage("_AddUpdateModel.cshtml");
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script id="data-template" type="x-tmpl-mustache">
+    <tr>
+        <td>{{ID}}</td>
+        <td>{{Name}}</td>
+        <td><input type="number" class="txtSalary" value="{{Salary}}" data-id="{{ID}}"></td>
+        <td>{{{Status}}}</td>
+        <td>
+            <button class="btn btn-primary btn-edit" data-id="{{ID}}">Edit</button>
+            <button class="btn btn-danger btn-delete" data-id="{{ID}}">Delete</button>
+        </td>
+    </tr>
+</script>
+
+
+
+
+@section Scripts{        
+    <script src="~/scripts/plugins/bootbox.min.js"></script>
+    <script src="~/scripts/plugins/mustache.min.js"></script>
+    <script src="~/scripts/plugins/jquery.twbsPagination.min.js"></script>
+    <script src="~/scripts/controller/homeController.js"></script>
+}
